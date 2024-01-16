@@ -9,7 +9,7 @@ app.get('/api/items', async (req, res) => {
   res.send({ items: await Item.findAll() });
 });
 
-const PORT = process.env.PORT || 8007;
+const PORT = process.env.PORT || 8008;
 
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}.`);
